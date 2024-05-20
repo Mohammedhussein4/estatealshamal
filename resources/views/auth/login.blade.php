@@ -42,17 +42,18 @@
         <div class="tab active-tab" id="tab-1">
             <div class="inner-box">
                 <h4>Sign in</h4>
-                <form action="{{ route('login') }}" method="post" class="default-form">
+                <form action="{{ route('login') }}" method="post" class="default-form" id="login_form">
                @csrf
 
                     <div class="form-group">
-                        <label>Email/Name/Phone </label>
-                        <input type="text" name="login" id="login" required="">
+                        <label>Email/Name/Phone  <span>*</span></label>
+                        <input type="text" name="login" id="login">
+
                     </div>
 
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" id="password" required="">
+                        <label>Password <span>*</span></label>
+                        <input type="password" name="password" id="password">
                     </div>
 
                     <div class="form-group message-btn">
@@ -60,7 +61,7 @@
                     </div>
                 </form>
                 <div class="othre-text">
-                    <p>Have not any account? <a href="signup.html">Register Now</a></p>
+                    <p>Have not any account? <a href="register">Register Now</a></p>
                 </div>
             </div>
         </div>
@@ -68,27 +69,27 @@
             <div class="inner-box">
                 <h4>Sign in</h4>
 
-                <form action="{{ route('register') }}" method="post" class="default-form">
+                <form action="{{ route('register') }}" method="post" class="default-form" id="register_form">
                     @csrf
 
 
                     <div class="form-group">
 
-                        <label>User name</label>
-                        <input type="text" name="name" id="name" required="">
+                        <label>User name <span>*</span></label>
+                        <input type="text" name="name" id="name">
                     </div>
                     <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" name="email" id="email" required="">
+                        <label>Email address <span>*</span></label>
+                        <input type="text" name="email" id="email">
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" id="password" required="">
+                        <label>Password <span>*</span></label>
+                        <input type="password" name="password" id="password">
                     </div>
 
                      <div class="form-group">
-                        <label>Confirm Password</label>
-                        <input type="password" name="password_confirmation" id="password_confirmation" required="">
+                        <label>Confirm Password <span>*</span></label>
+                        <input type="password" name="password_confirmation" id="password_confirmation">
                     </div>
 
                     <div class="form-group message-btn">
