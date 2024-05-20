@@ -9826,3 +9826,13 @@ div#mCSB_1_container{
 .search-field .top-search .search-btn button i{
   margin-right: 8px;
 }
+#login_form label span {
+    color: red;
+    font-size: 87.5%;
+    margin-left: .5em;
+}
+#register_form label span {
+    color: red;
+    font-size: 87.5%;
+    margin-left: .5em;
+}
